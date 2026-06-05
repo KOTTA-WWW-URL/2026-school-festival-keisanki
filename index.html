@@ -306,9 +306,9 @@ function calculate() {
   for (let i = 0; i < NUM; i++) total += parseFloat(values[i]) || 0;
 
   let snack, theme, emoji;
-  if (total < 1)        { snack = 'なし';               theme = 'theme-nashi';  emoji = '—'; }
-  else if (total < 70)  { snack = 'あめ or ハイチュー'; theme = 'theme-ame';    emoji = '🍬'; }
-  else if (total < 105) { snack = 'うまい棒';           theme = 'theme-umaibo'; emoji = '🌽'; }
+  if (total < 0)        { snack = 'なし';               theme = 'theme-nashi';  emoji = '—'; }
+  else if (total < 40)  { snack = 'あめ or ハイチュー'; theme = 'theme-ame';    emoji = '🍬'; }
+  else if (total < 75) { snack = 'うまい棒';           theme = 'theme-umaibo'; emoji = '🌽'; }
   else                  { snack = 'ブタメン（しおきん）'; theme = 'theme-buta';  emoji = '🐷'; }
 
   const area = document.getElementById('resultArea');
